@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "client": "npm run start --prefix client",
-    "server": "npm run dev --prefix server",
-    "dev": "concurrently \"npm:server\" \"npm:client\" "
+    "client-build": "npm run fast-build-and-move --prefix client",
+    "server": "npm run start-nodemon --prefix server",
+    "dev": "concurrently \"npm:client-build\" \"npm:server\" "
   },
   "author": "Enes Karakaş",
   "license": "ISC",

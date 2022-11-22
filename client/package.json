@@ -12,6 +12,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "move-build": "move build ../server/public",
+    "build-and-move": "npm run build && npm run move-build",
+    "fast-build-and-move": "set BUILD_PATH=../server/public&& react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
