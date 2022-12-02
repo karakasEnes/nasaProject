@@ -7,7 +7,9 @@
     "client": "npm run start --prefix client",
     "client-build": "npm run fast-build-and-move --prefix client",
     "server": "npm run start-nodemon --prefix server",
-    "dev": "concurrently \"npm:client-build\" \"npm:server\" "
+    "server-cluster": "npm run cluster --prefix server",
+    "dev": "concurrently \"npm:client-build\" \"npm:server\" ",
+    "dev-cluster": "concurrently \"npm:client-build\" \"npm:server-cluster\" "
   },
   "author": "Enes Karakaş",
   "license": "ISC",

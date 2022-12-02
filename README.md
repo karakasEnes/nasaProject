@@ -5,5 +5,16 @@
 - client and server folder structure
 - serving client builded files into serverside and deploying it.
 - CORS topic
-- Testing Back-End API's via SuperTest + JEST.
+- Testing Back-End APIs
+  - JEST
+  - SuperTEST
+- Handling backend multiple requests.
+  - Understanding How Cluster Works
+  - Cluster, Multiple Core Process, Logical Proccessors
+  - Load Balancing, Horizontal - Vertical Scaling, RoundRobin Approach
+  - Cluster Policy in Windows OS.
+  - Implementing Cluster via PM2 library.
+- Understanding "Work Threads"
+  - Using v8 isolation (new) feature.
+  - Differences between cluster.
 - And More
