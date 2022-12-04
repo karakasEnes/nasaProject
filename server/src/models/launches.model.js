@@ -34,7 +34,7 @@ async function saveLaunch(launch) {
   if (!planet) {
     throw new Error('No matching planet in Planet Collection!');
   }
-  await launchesDB.updateOne(
+  await launchesDB.findOneAndUpdate(
     {
       flightNumber: launch.flightNumber,
     },
@@ -47,8 +47,10 @@ async function saveLaunch(launch) {
 
 saveLaunch(launch);
 
-function existsLaunchWithId(launchId) {
-  return launches.has(launchId);
+async function existsLaunchWithId(launchId) {
+  return await launchesDB.findOne({
+    flightNumber: launchId,
+  });
 }
 
 async function addNewLaunch(launch) {
@@ -63,11 +65,18 @@ async function addNewLaunch(launch) {
   await saveLaunch(newLaunch);
 }
 
-function abortLaunchById(launchId) {
-  const aborted = launches.get(launchId);
-  aborted.upcoming = false;
-  aborted.success = false;
-  return aborted;
+async function abortLaunchById(launchId) {
+  const aborted = await launchesDB.updateOne(
+    {
+      flightNumber: launchId,
+    },
+    {
+      success: false,
+      upcoming: false,
+    }
+  );
+
+  return aborted.modifiedCount === 1;
 }
 
 module.exports = {
