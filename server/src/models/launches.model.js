@@ -1,7 +1,10 @@
-const launches = new Map();
+const launchesDB = require('./launches.schema');
+const planets = require('./planet.schema');
+
+const DEFAULT_FLIGHTNUMBER = -1;
 
 const launch = {
-  flightNumber: 100,
+  flightNumber: DEFAULT_FLIGHTNUMBER,
   mission: 'Kepler Exploration X',
   rocket: 'Explorer IS1',
   launchDate: new Date('December 27, 2030'),
@@ -11,29 +14,53 @@ const launch = {
   success: true,
 };
 
-let latestFlightNumber = 100;
+async function getLatestFlightNumber() {
+  const latestLaunch = await launchesDB.findOne().sort('-flightNumber');
 
-launches.set(launch.flightNumber, launch);
+  if (!latestLaunch) {
+    return DEFAULT_FLIGHTNUMBER;
+  }
 
-function getAllLaunches() {
-  return Array.from(launches.values());
+  return latestLaunch.flightNumber;
 }
+
+async function getAllLaunches() {
+  return await launchesDB.find({}, { _id: 0, __v: 0 });
+}
+
+async function saveLaunch(launch) {
+  const planet = await planets.findOne({ keplerName: launch.target });
+
+  if (!planet) {
+    throw new Error('No matching planet in Planet Collection!');
+  }
+  await launchesDB.updateOne(
+    {
+      flightNumber: launch.flightNumber,
+    },
+    launch,
+    {
+      upsert: true,
+    }
+  );
+}
+
+saveLaunch(launch);
 
 function existsLaunchWithId(launchId) {
   return launches.has(launchId);
 }
 
-function addNewLaunch(launch) {
-  latestFlightNumber++;
-  launches.set(
-    latestFlightNumber,
-    Object.assign(launch, {
-      success: true,
-      upcoming: true,
-      customers: ['Zero To Mastery', 'NASA'],
-      flightNumber: latestFlightNumber,
-    })
-  );
+async function addNewLaunch(launch) {
+  const latestFlightNumber = (await getLatestFlightNumber()) + 1;
+  const newLaunch = Object.assign(launch, {
+    success: true,
+    upcoming: true,
+    customers: ['Zero To Mastery', 'NASA'],
+    flightNumber: latestFlightNumber,
+  });
+
+  await saveLaunch(newLaunch);
 }
 
 function abortLaunchById(launchId) {

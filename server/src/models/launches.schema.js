@@ -33,4 +33,4 @@ const launchesSchema = new mongoose.Schema({
   },
 });
 
-module.exports = launchesSchema;
+module.exports = mongoose.model('Launch', launchesSchema);
