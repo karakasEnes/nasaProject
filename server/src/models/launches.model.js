@@ -45,8 +45,6 @@ async function saveLaunch(launch) {
   );
 }
 
-saveLaunch(launch);
-
 async function existsLaunchWithId(launchId) {
   return await launchesDB.findOne({
     flightNumber: launchId,

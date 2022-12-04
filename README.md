@@ -22,4 +22,6 @@
   - using mongoose to connect mongodb atlas cluster
   - Difference between MVC's Model vs mongoose.model
   - removing all states in memory, applying them with database (mongodb), converting application to be stateless.
+  - Adjusting JEST for mongoDB
+  -
 - And More

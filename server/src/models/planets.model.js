@@ -26,7 +26,7 @@ function loadPlanetData() {
       )
       .on('data', async (data) => {
         if (isHabitable(data)) {
-          savePlanet(data);
+          await savePlanet(data);
         }
       })
       .on('error', (err) => {
