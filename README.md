@@ -17,4 +17,7 @@
 - Understanding "Work Threads"
   - Using v8 isolation (new) feature.
   - Differences between cluster.
+- SQL vs NOSQL Topic
+  - Making decisions about which approach is best for a particular application.
+  - using mongoose to connect mongodb atlas cluster
 - And More
