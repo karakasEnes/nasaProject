@@ -1,9 +1,9 @@
 # Full Stack Application (Heavily BackEnd)
 
-- React, node.js, Express
+- React, node.js, Express, mongoDB, Jest
 - MVP Pattern (Excelent Work to implement MVP Pattern)
-- client and server folder structure
-- serving client builded files into serverside and deploying it.
+- Client and server folder structure
+- Serving client builded files into serverside and deploying it.
 - CORS topic
 - Testing Back-End APIs
   - JEST
@@ -23,5 +23,5 @@
   - Difference between MVC's Model vs mongoose.model
   - removing all states in memory, applying them with database (mongodb), converting application to be stateless.
   - Adjusting JEST for mongoDB
-  -
+- Versioning API (dynamicly)
 - And More
