@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 
-const MONGO_URL = `mongodb+srv://main-user:${process.env.MONGO_PSW}@nasa.of1cskx.mongodb.net/nasa-db?retryWrites=true&w=majority`;
+const MONGO_URL = process.env.MONGO_URL;
 
 mongoose.connection.once('open', () => {
   console.log('Succeed to connect MONGO DB');
