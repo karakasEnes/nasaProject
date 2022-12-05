@@ -28,4 +28,5 @@
   - Sending Query object to have corresponding data properties.
   - Dealing with relationed data inside mongodb.
   - Covering how to deal with population, selecting properties and more while requesting data.
+  - Applying pagination, page, limit to our own api.
 - And More
