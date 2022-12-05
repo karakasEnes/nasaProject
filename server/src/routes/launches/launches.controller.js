@@ -1,6 +1,6 @@
 const {
   getAllLaunches,
-  addNewLaunch,
+  scheduleNewLaunch,
   existsLaunchWithId,
   abortLaunchById,
 } = require('../../models/launches.model.js');
@@ -31,7 +31,7 @@ async function httpAddNewLaunch(req, res) {
     });
   }
 
-  await addNewLaunch(launch);
+  await scheduleNewLaunch(launch);
 
   return res.status(201).json(launch);
 }

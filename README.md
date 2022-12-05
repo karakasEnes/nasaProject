@@ -24,4 +24,8 @@
   - removing all states in memory, applying them with database (mongodb), converting application to be stateless.
   - Adjusting JEST for mongoDB
 - Versioning API (dynamicly)
+- Talking to third libary(spaceX) via Axios To have data for our application
+  - Sending Query object to have corresponding data properties.
+  - Dealing with relationed data inside mongodb.
+  - Covering how to deal with population, selecting properties and more while requesting data.
 - And More
