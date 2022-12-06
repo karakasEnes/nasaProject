@@ -26,8 +26,14 @@
   - Adjusting JEST for mongoDB
 - Versioning API (dynamicly)
 - Talking to third libary(spaceX) via Axios To have data for our application
-  - Sending Query object to have corresponding data properties.
+  - Posting Query object to have corresponding data properties.
   - Dealing with relationed data inside mongodb.
   - Covering how to deal with population, selecting properties and more while requesting data.
-  - Applying pagination, page, limit to our own api.
+  - Applying pagination, page, limit for our own api.
+- AUTHENTICATION and SECURITY.
+  - HTTPS with SSL and TLS.
+  - Understanding Auth 2.0 flow and applying it via passport libary
+  - Token Based Authentication vs Cookie Based
+  - Cookies, Session, Client Side Session, Server Side Session
+  - Using Express Client Side Session package "cookie-session" with passport.
 - And More
