@@ -40,4 +40,6 @@
   - CI & CD Pipeline
   - Github Actions
   - Building CI Pipeline for "NASA" Project inside Github Actions.
+  - CI Test functionality inside Github Actions.
+  - Mongodb Integration, Mongodb Test Functionality inside Github Actions.
 - And More
