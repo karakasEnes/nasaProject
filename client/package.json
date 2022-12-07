@@ -10,6 +10,7 @@
     "react-scripts": "^5.0.0"
   },
   "scripts": {
+    "remove-modules": "rm -rf node_modules",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "move-build": "move build ../server/public",

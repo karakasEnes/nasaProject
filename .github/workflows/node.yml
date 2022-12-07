@@ -13,5 +13,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
+      - run: npm run remove-modules --prefix client
       - run: npm install
-      - run: npm run fast-build-and-move-for-unix --prefix client
+      - run: npm run fast-build-and-move --prefix client
