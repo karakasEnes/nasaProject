@@ -10,7 +10,7 @@
     "server-cluster": "npm run cluster --prefix server",
     "dev": "concurrently \"npm:client-build\" \"npm:server\" ",
     "dev-cluster": "concurrently \"npm:client-build\" \"npm:server-cluster\" ",
-    "test": "npm run test --server && npm run test --client"
+    "test": "npm run test --prefix server && npm run test --prefix client"
   },
   "author": "Enes Karakaş",
   "license": "ISC",
