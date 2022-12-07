@@ -9,7 +9,8 @@
     "server": "npm run start-nodemon --prefix server",
     "server-cluster": "npm run cluster --prefix server",
     "dev": "concurrently \"npm:client-build\" \"npm:server\" ",
-    "dev-cluster": "concurrently \"npm:client-build\" \"npm:server-cluster\" "
+    "dev-cluster": "concurrently \"npm:client-build\" \"npm:server-cluster\" ",
+    "test": "npm run test --server && npm run test --client"
   },
   "author": "Enes Karakaş",
   "license": "ISC",

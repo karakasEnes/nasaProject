@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
+    "test": "jest",
     "test-watch": "jest --watch",
     "start-nodemon": "nodemon src/server.js",
     "start": "node src/server.js",
