@@ -42,4 +42,17 @@
   - Building CI Pipeline for "NASA" Project inside Github Actions.
   - CI Test functionality inside Github Actions.
   - Mongodb Integration, Mongodb Test Functionality inside Github Actions.
+- Docker (Containers) & Virtual Machine Topic
+  - Creating Container, dockerfile to setup our application on the container.
+  - Building Our Own Image hosting it on dockerHub.
+  - Serving Docker Image (Our Application) on AWS EC2.
+  - Installing Docker Inside AWS EC2 to make online our full-stack application over internet. Now Our application is available to anyone who has internet connection!
+- GraphQL and Apollo
+
+  - Difference between GraphQL and REST.
+  - Creating GraphQL Server and Apollo Server
+  - Understanding Query, Mutation, Resolvers and more.
+  - Please check below repository link to see project code
+  - https://github.com/karakasEnes/graphql-apollo#readme
+
 - And More

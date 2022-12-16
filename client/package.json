@@ -16,6 +16,7 @@
     "move-build": "move build ../server/public",
     "build-and-move": "npm run build && npm run move-build",
     "fast-build-and-move": "set BUILD_PATH=../server/public&& react-scripts build",
+    "fast-build-and-move-unix": "BUILD_PATH=../server/public react-scripts build",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
   },
