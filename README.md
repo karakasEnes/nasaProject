@@ -1,5 +1,7 @@
 # Full Stack Application (Heavily BackEnd)
 
+## TL;DR: What is covered? Pre-exists React front-end code provided. Node.js, Express, Mongodb, Jest, Supertest, Clusters, Threads, Authentication and Security, CI & CD, Github Actions, Docker, AWS EC2, GraphQL with Express and Apollo, Socket IO (fundamentals), Deno vs Node.js (fundamentals).
+
 - React, node.js, Express, mongoDB, Jest
 - MVP Pattern (Excelent Work to implement MVP Pattern)
 - Client and server folder structure
@@ -55,4 +57,12 @@
   - Please check below repository link to see project code
   - https://github.com/karakasEnes/graphql-apollo#readme
 
-- And More
+- Socket.io
+
+  - Polling vs Socket
+  - Difference between WebSocket and HTTP
+  - Since I have already big project related to socket.io I'm skipping to build additional project for now.
+  - Learning fundamentals about socket.io techonology.
+
+- Deno vs Node.js
+  - Learning basics of Deno and why it exists. Difference between node.js.
