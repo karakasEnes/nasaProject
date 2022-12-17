@@ -1,4 +1,4 @@
-# Full Stack Node.js Application (Heavily BackEnd)
+# Full Stack Node.js Application (Heavily Back End)
 
 ## TL;DR: What is covered? Pre-exists React front-end code provided. Node.js, Express, Mongodb, MVP Pattern, Jest, Supertest, Clusters, Threads, Authentication and Security, CI & CD, Github Actions, Docker, AWS EC2, GraphQL with Express and Apollo, Socket IO (fundamentals), Deno vs Node.js (fundamentals).
 
