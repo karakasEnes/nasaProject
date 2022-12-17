@@ -1,6 +1,6 @@
-# Full Stack Application (Heavily BackEnd)
+# Full Stack Node.js Application (Heavily BackEnd)
 
-## TL;DR: What is covered? Pre-exists React front-end code provided. Node.js, Express, Mongodb, Jest, Supertest, Clusters, Threads, Authentication and Security, CI & CD, Github Actions, Docker, AWS EC2, GraphQL with Express and Apollo, Socket IO (fundamentals), Deno vs Node.js (fundamentals).
+## TL;DR: What is covered? Pre-exists React front-end code provided. Node.js, Express, Mongodb, MVP Pattern, Jest, Supertest, Clusters, Threads, Authentication and Security, CI & CD, Github Actions, Docker, AWS EC2, GraphQL with Express and Apollo, Socket IO (fundamentals), Deno vs Node.js (fundamentals).
 
 - React, node.js, Express, mongoDB, Jest
 - MVP Pattern (Excelent Work to implement MVP Pattern)
