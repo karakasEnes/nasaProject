@@ -2,6 +2,8 @@
 
 ## TL;DR: What is covered? Pre-exists React front-end code provided. Node.js, Express, Mongodb, MVP Pattern, Jest, Supertest, Clusters, Threads, Authentication and Security, CI & CD, Github Actions, Docker, AWS EC2, GraphQL with Express and Apollo, Socket IO (fundamentals), Deno vs Node.js (fundamentals).
 
+### WARNING: This is live application which runs on AWS E2 service inside docker image. The reason I don't provide live link it's about can't afford domain on AWS and to not get any charge by AWS.
+
 - React, node.js, Express, mongoDB, Jest
 - MVP Pattern (Excelent Work to implement MVP Pattern)
 - Client and server folder structure
